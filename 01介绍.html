@@ -1,0 +1,378 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01：介绍 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02指令.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="01介绍.html">
+            
+                <a href="01介绍.html">
+            
+                    
+                    01：介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02指令.html">
+            
+                <a href="02指令.html">
+            
+                    
+                    02：指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03组件.html">
+            
+                <a href="03组件.html">
+            
+                    
+                    03：生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >01：介绍</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="&#x58F0;&#x660E;&#x5F0F;&#x6E32;&#x67D3;">&#x58F0;&#x660E;&#x5F0F;&#x6E32;&#x67D3;</h4>
+<pre><code class="lang-js">npm install --global vue-cli
+vue init webpack &#x9879;&#x76EE;&#x540D;&#x79F0;
+npm install
+npm run dev
+</code></pre>
+<ol>
+<li>&#x5C06;&#x6570;&#x636E;&#x6E32;&#x67D3;&#x8FDB;DOM&#x5143;&#x7D20;&#xFF1A;</li>
+</ol>
+<pre><code class="lang-vue">&lt;div id=&quot;app&quot;&gt;
+  {{ message }}
+&lt;/div&gt;
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = <span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#app&apos;</span>,
+  data: {
+    message: <span class="hljs-string">&apos;Hello Vue!&apos;</span>
+  }
+})
+</code></pre>
+<ol>
+<li><p>&#x7ED1;&#x5B9A;&#x5143;&#x7D20; attribute:</p>
+<p><code>v-bind</code>&#x5C5E;&#x6027;&#x79F0;&#x4E3A;&#x6307;&#x4EE4;&#xFF0C;&#x6307;&#x4EE4;&#x7684;&#x524D;&#x7F00;<code>v-</code>&#xFF0C;&#x662F;Vue&#x63D0;&#x4F9B;&#x7684;&#x7279;&#x6B8A;&#x5C5E;&#x6027;</p>
+<p><code>span</code>&#x5143;&#x7D20;&#x8282;&#x70B9;&#x7684;<code>title</code>&#x5C5E;&#x6027;&#x4E0E;<code>msg</code>&#x4FDD;&#x6301;&#x4E00;&#x81F4;</p>
+</li>
+</ol>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;div id=&quot;app-2&quot;&gt;
+      &lt;span v-bind:title=&quot;msg&quot;&gt;
+        &#x9F20;&#x6807;&#x60AC;&#x505C;&#x51E0;&#x79D2;&#x949F;&#x67E5;&#x770B;&#x6B64;&#x5904;&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#x7684;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF01;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &apos;HelloWorld&apos;,
+  data () {
+    return {
+      msg: &apos;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x4E8E; &apos; + new Date().toLocaleString()
+    }
+  }
+}
+&lt;/script&gt;
+</code></pre>
+<h4 id="&#x6761;&#x4EF6;&#x4E0E;&#x5FAA;&#x73AF;">&#x6761;&#x4EF6;&#x4E0E;&#x5FAA;&#x73AF;</h4>
+<ol>
+<li><code>v-if</code>&#x63A7;&#x5236;&#x5207;&#x6362;&#x5143;&#x7D20;&#xFF0C;&#x5143;&#x7D20;&#x6D88;&#x5931;&#xFF0C;&#x4E0B;&#x9762;&#x5143;&#x7D20;&#x4F1A;&#x5411;&#x4E0A;&#x9876;</li>
+</ol>
+<pre><code class="lang-vue">  &lt;div id=&quot;app&quot;&gt;
+    &lt;p v-if=&quot;true&quot;&gt;see me 1&lt;/p&gt;
+    &lt;p v-if=&quot;false&quot;&gt;see me 2&lt;/p&gt;
+  &lt;/div&gt;
+</code></pre>
+<ol>
+<li><code>v-for</code>&#x7ED1;&#x5B9A;&#x6570;&#x7EC4;&#x6570;&#x636E;&#x6E32;&#x67D3;&#x5217;&#x8868;&#xFF08;&#x5927;&#x6982;&#x8C8C;&#x4F3C;&#x53EF;&#x80FD;&#x521A;&#x521A;get&#x4E86;&#x7A76;&#x7ADF;&#x8981;&#x600E;&#x4E48;&#x52A0;&#x51FD;&#x6570;......&#xFF09;<ul>
+<li><code>v-on</code>&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#xFF0C;  <code>this</code> !!!</li>
+</ul>
+</li>
+</ol>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;ol&gt;
+      &lt;li v-for=&quot;todo in todos&quot;&gt;
+        {{ todo.text }}
+      &lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;button @click=&quot;clickfun&quot;&gt;&#x70B9;&#x6211;&#xFF01;&lt;/button&gt;
+    &lt;p&gt;{{ message }}&lt;/p&gt;
+    &lt;button v-on:click=&quot;reverseMessage&quot;&gt;&#x53CD;&#x8F6C;&#x6D88;&#x606F;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &apos;Declarative&apos;,
+  data () {
+    return {
+      todos:[
+        {text:&apos;item01&apos;},
+        {text:&apos;item02&apos;},
+        {text:&apos;item03&apos;}
+      ],
+      message: &apos;Hello Vue.js!&apos;
+    }
+  },
+  methods:{
+    clickfun:function () {
+      console.log(1);
+      this.todos.push({text:&apos;i am new item&apos;})
+    },   
+    reverseMessage: function () {
+      this.message = this.message.split(&apos;&apos;).reverse().join(&apos;&apos;)
+    } 
+  }
+}
+&lt;/script&gt;
+</code></pre>
+<h4 id="&#x5904;&#x7406;&#x7528;&#x6237;&#x8F93;&#x5165;">&#x5904;&#x7406;&#x7528;&#x6237;&#x8F93;&#x5165;</h4>
+<p><code>v-model</code>&#x8868;&#x5355;&#x8F93;&#x5165;&#x548C;&#x5E94;&#x7528;&#x72B6;&#x6001;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;</p>
+<pre><code class="lang-vue">&lt;input v-model=&quot;message&quot;&gt;
+
+data () {
+  return {
+    message:&apos;Unbelievable&apos;
+  }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02指令.html" class="navigation navigation-next " aria-label="Next page: 02：指令">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01：介绍","level":"1.2","depth":1,"next":{"title":"02：指令","level":"1.3","depth":1,"path":"02指令.md","ref":"02指令.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"01介绍.md","mtime":"2020-03-30T03:15:48.819Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-30T03:16:32.804Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
